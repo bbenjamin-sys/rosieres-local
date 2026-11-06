@@ -1,0 +1,30 @@
+{
+  "title": "Rosières Local",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Local dishwasher connection",
+        "description": "Direct local connection to the Rosières dishwasher using the Simply-Fi API.",
+        "data": {
+          "host": "IP address",
+          "encryption_key": "XOR key (16 characters)",
+          "name": "Device name"
+        },
+        "data_description": {
+          "host": "Dishwasher IPv4 address or DNS name.",
+          "encryption_key": "Local XOR encryption key used by the Simply-Fi API.",
+          "name": "Device name shown in Home Assistant."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Unable to reach the dishwasher.",
+      "invalid_key": "The XOR key must contain exactly 16 bytes.",
+      "invalid_response": "Invalid response. Check the IP address and XOR key.",
+      "unknown": "Unexpected connection error."
+    },
+    "abort": {
+      "already_configured": "This dishwasher is already configured."
+    }
+  }
+}

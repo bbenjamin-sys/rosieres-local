@@ -1,0 +1,14 @@
+{
+  "domain": "rosieres_local",
+  "name": "Rosières Local",
+  "codeowners": [
+    "@bbenjamin-sys"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/bbenjamin-sys/rosieres-local",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/bbenjamin-sys/rosieres-local/issues",
+  "requirements": [],
+  "version": "0.4.0"
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Rosières Local",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connexion locale au lave-vaisselle",
+        "description": "Connexion directe au lave-vaisselle Rosières via l'API locale Simply-Fi.",
+        "data": {
+          "host": "Adresse IP",
+          "encryption_key": "Clé XOR (16 caractères)",
+          "name": "Nom de l'appareil"
+        },
+        "data_description": {
+          "host": "Adresse IPv4 ou nom DNS du lave-vaisselle.",
+          "encryption_key": "Clé locale de chiffrement XOR utilisée par l'API Simply-Fi.",
+          "name": "Nom affiché dans Home Assistant."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossible de joindre le lave-vaisselle.",
+      "invalid_key": "La clé XOR doit contenir exactement 16 octets.",
+      "invalid_response": "Réponse invalide. Vérifie l'adresse IP et la clé XOR.",
+      "unknown": "Erreur inattendue lors de la connexion."
+    },
+    "abort": {
+      "already_configured": "Ce lave-vaisselle est déjà configuré."
+    }
+  }
+}
